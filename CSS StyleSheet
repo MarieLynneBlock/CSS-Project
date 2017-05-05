@@ -1,0 +1,801 @@
+.titlebox .bottom {display:none}
+    
+
+/* Made by The Munchkin Algorithm*/
+    /* Instagram: @TheMunchkinAlgorithm */
+    /* /u/TheMunchkinAlgorithm */
+    /* GITHUB: https://github.com/MarieLynneBlock */
+/* For Questions, Bug Reports or Feedback: major.munchkini@gmail.com */
+
+    /* INSPIRATION & Thanks */
+/* No Comment = highlight inspired by /r/SuicideWatch */
+/* Thanks to CSShelp community */
+
+
+
+    /* Body */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12.5px;
+}
+
+
+
+    /* Header */
+
+#header {
+    background: url(%%HEADER-1920x120%%) no-repeat;
+    height: 120px;
+    width: 100%;
+    background-size: 100% 120px;
+    background-position: 100%;
+}
+
+#header-bottom-left {
+    position: absolute;
+    bottom: 0;
+}
+
+#header-img[id] {
+    display: none;
+}
+
+#sr-header-area a {
+    color : white;
+}
+
+.sr-bar .separator {
+    color : #3D3D3D;
+}
+
+#sr-header-area .selected a {
+    color: #9a7fa1 !important; }
+
+#header {
+    border-bottom-color : #3F4159;
+    background-color : #3F4159;
+}
+
+#sr-header-area {
+    border-bottom-color : white;
+    background-color : #3F4159;
+}
+
+#header-bottom-right {
+    background-color : #FFFFFF;
+}
+
+
+    /* Tab Menu */
+
+#header .tabmenu li a {
+    display: inline-block;
+    background-color: transparent;
+    border: white;
+    margin: 0px;
+    padding: 0px 15px;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    line-height: 17px;
+    color: #9a7fa1;
+    text-shadow: 0 2px 0 #000;
+    }
+
+
+#header .tabmenu li a:hover, #header .tabmenu .selected a {
+    color: white;
+    }
+
+
+
+
+    /* OLD TAB MENU - CLASSIC REDDIT STYLE [DELETED] */
+
+/* ---
+
+#header .tabmenu li a{
+    color: #5E8DB8;
+    background-color: #3F4159;
+    border: 1px solid #5E8DB8;
+}
+
+#header .tabmenu .selected a{
+    color: white;
+    background-color: #3F4159;
+    border: 2px solid #5E8DB8;
+}
+
+--- */
+
+
+    /* OLD SUBREDDIT NAME - CLASSIC REDDIT STYLE [DELETED] */
+    /* Subreddit Name */
+
+.redditname a {
+    color: #3F4159 !important;
+    font-size: 35px;
+}
+
+.redditname a: hover {
+    color: white; 
+    text-decoration: none;
+}
+
+
+    /* Post */
+
+.link {
+    overflow: hidden; margin-bottom: 3px;
+    padding: 15px;
+    border: 1px solid #3F4159;
+    border-left: 4px solid #70437a !important;
+    background-color: white;
+}
+
+div.content #siteTable div.link div.entry p.title a.title {
+    color: #3F4159;
+}
+
+a:visited, a:active, div.content #siteTable div.link div.entry p.title a.title:visited, div.content #siteTable div.link div.entry p.title a.title:active {
+    color: #70437a;
+}
+
+a.title:visited { 
+    color: #70437a !important;
+}
+
+div.side a:hover {
+    color: #70437a;
+}
+
+
+    /*Highlight the "Comments" link for posts with no comments - Inspired by /r/SuicideWatch */
+
+.buttons .comments.empty { 
+    padding: 3px;
+    margin: 1px;
+    font-size: 100%;
+    text-align: left;
+    color: #3987ce;
+}
+
+
+    /* Upvote arrow */
+
+.arrow.up {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #bdbdbd;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+
+.arrow.up:after {
+    content:"";
+    position:relative;
+    top:7px;
+    left:-3px;
+    width:5px;
+    height:6px;
+    background: #bdbdbd;
+    background-image: -webkit-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -o-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background: linear-gradient(to bottom, #bdbdbd, #dcdcdc);
+    display:block;
+}
+
+.arrow.upmod {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #9E6397;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+
+.arrow.upmod:after {
+    content: "";
+    position: relative;
+    top: 7px;
+    left: -3px;
+    width: 5px;
+    height: 6px;
+    background: #9E6397;
+    background-image: -webkit-linear-gradient(top, #9E6397, #D49FCD);
+    background-image: -moz-linear-gradient(top, #9E6397, #D49FCD);
+    background-image: -o-linear-gradient(top, #9E6397, #D49FCD);
+    background-image: -ms-linear-gradient(top, #9E6397, #D49FCD);
+    background-image: linear-gradient(to bottom, #9E6397, #D49FCD);
+    display: block;
+}
+
+
+    /* Login bar */
+
+#header-bottom-right {
+  background-color: white;
+  color: #333333;
+  border: 2px solid #70437a !important;
+  height: 21px!important;
+  line-height: 20px! important;
+  vertical-align: middle !important;
+  padding: 6px 25px 4px 5px !important;
+  top:initial !important;
+  bottom:0 !important;
+}
+
+
+
+    /* SIDE-BAR */
+
+.side md strong {
+    font-family: sans serif !important;
+}
+
+.side {
+    font-size: 13.5px;
+}
+
+
+
+    /* Changing Side-Bar Pictures */
+
+.side {
+    padding-top: 500px;
+}
+
+
+input[name=uh] ~ a:after {
+    position: absolute;
+    top: 45px;
+    right: 4px;
+    width: 300px;
+    height: 300px;
+}
+
+.res-navTop input[name=uh] ~ a:after {
+    top: 150px;
+}
+
+body:not(.loggedin) .side {
+      padding-top: 10px;
+}
+
+body:not(.loggedin) .side:before {
+    content: url(%%placeholder%%);
+}
+
+
+        /* Image List */
+
+input[name=uh][value^="0"] ~ a:after {
+    content: url('%%random-0%%');
+}
+
+input[name=uh][value^="1"] ~ a:after {
+    content: url('%%random-1%%');
+}
+
+input[name=uh][value^="2"] ~ a:after {
+    content: url('%%random-2%%');
+}
+
+input[name=uh][value^="3"] ~ a:after {
+    content: url('%%random-3%%');
+}
+
+input[name=uh][value^="4"] ~ a:after {
+    content: url('%%random-4%%');
+}
+
+input[name=uh][value^="5"] ~ a:after {
+    content: url('%%random-5%%');
+}
+
+input[name=uh][value^="6"] ~ a:after {
+    content: url('%%random-6%%');
+}
+
+input[name=uh][value^="7"] ~ a:after {
+    content: url('%%random-7%%');
+}
+
+input[name=uh][value^="8"] ~ a:after {
+    content: url('%%random-8%%');
+}
+
+input[name=uh][value^="9"] ~ a:after {
+    content: url('%%random-9%%');
+}
+
+input[name=uh][value^="a"] ~ a:after {
+    content: url('%%random-a%%');
+}
+
+input[name=uh][value^="b"] ~ a:after {
+    content: url('%%random-b%%');
+}
+
+input[name=uh][value^="c"] ~ a:after {
+    content: url('%%random-c%%');
+}
+
+input[name=uh][value^="d"] ~ a:after {
+    content: url('%%random-d%%');
+}
+
+input[name=uh][value^="e"] ~ a:after {
+    content: url('%%random-e%%');
+}
+
+input[name=uh][value^="f"] ~ a:after {
+    content: url('%%random-f%%');
+}
+
+input[name=uh][value^="g"] ~ a:after {
+    content: url('%%random-g%%');
+}
+
+input[name=uh][value^="h"] ~ a:after {
+    content: url('%%random-h%%');
+}
+
+input[name=uh][value^="i"] ~ a:after {
+    content: url('%%random-i%%');
+}
+
+input[name=uh][value^="j"] ~ a:after {
+    content: url('%%random-j%%');
+}
+
+input[name=uh][value^="k"] ~ a:after {
+    content: url('%%random-k%%');
+}
+
+input[name=uh][value^="l"] ~ a:after {
+    content: url('%%random-l%%');
+}
+
+input[name=uh][value^="m"] ~ a:after {
+    content: url('%%random-m%%');
+}
+
+input[name=uh][value^="n"] ~ a:after {
+    content: url('%%random-n%%');
+}
+
+input[name=uh][value^="o"] ~ a:after {
+    content: url('%%random-o%%');
+}
+
+input[name=uh][value^="p"] ~ a:after {
+    content: url('%%random-p%%');
+}
+
+input[name=uh][value^="q"] ~ a:after {
+    content: url('%%random-q%%');
+}
+
+input[name=uh][value^="r"] ~ a:after {
+    content: url('%%random-r%%');
+}
+
+input[name=uh][value^="s"] ~ a:after {
+    content: url('%%random-s%%');
+}
+
+input[name=uh][value^="t"] ~ a:after {
+    content: url('%%random-t%%');
+}
+
+input[name=uh][value^="u"] ~ a:after {
+    content: url('%%random-u%%');
+}
+
+input[name=uh][value^="v"] ~ a:after {
+    content: url('%%random-v%%');
+}
+
+input[name=uh][value^="w"] ~ a:after {
+    content: url('%%random-w%%');
+}
+
+input[name=uh][value^="x"] ~ a:after {
+    content: url('%%random-x%%');
+}
+
+input[name=uh][value^="y"] ~ a:after {
+    content: url('%%random-y%%');
+}
+
+input[name=uh][value^="z"] ~ a:after {
+    content: url('%%random-z%%');
+}
+
+
+        /* placeholder */
+
+.side {
+    margin-top: 10px;
+    padding-top: 300px;
+    background-image: url(%%placeholder%%);
+    background-repeat: no-repeat
+}
+
+
+
+    /* Flairs */
+
+        /* Critique */
+.linkflair-Critique .linkflairlabel {
+    background-color: #490068;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    border-color: #490068;
+    border-width: 0px;
+    padding: 5px;
+}
+
+        /* Progress Pics */
+.linkflair-Progress .linkflairlabel {
+    background-color: #254C84;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    border-color: #254C84;
+    border-width: 0px;
+    padding: 5px;
+}
+
+       /* Tutorial */
+.linkflair-Tutorial .linkflairlabel {
+    background-color: #008080;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    border-color: #008080;
+    border-width: 0px;
+    padding: 5px;
+}
+
+        /* Question */
+.linkflair-Question .linkflairlabel {
+    background-color: #E29E3F;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    border-color: #29E3F;
+    border-width: 0px;
+    padding: 5px;
+}
+
+        /* Untagged */
+.linkflair-Untagged .linkflairlabel{
+    background-color: #96155A;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    border-color: #96155A;
+    border-width: 0px;
+    padding: 5px;
+}
+
+
+    /* Flair Link to Side Bar */
+
+html:lang(cr) .link:not(.linkflair-Critique) {
+    display: none
+}
+
+html:lang(pp) .link:not(.linkflair-Progress) {
+    display: none
+}
+
+html:lang(tu) .link:not(.linkflair-Tutorial) {
+    display: none
+}
+
+html:lang(qu) .link:not(.linkflair-Question) {
+    display: none
+}
+
+html:lang(un) .link:not(.linkflair-Untagged) {
+    display: none
+}
+
+    
+    /* Flair Buttons */
+
+        /* Critique */
+.side a[href*='#cr'] { 
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    border: 2px #490068;
+    font-size: 12.5;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: #490068;
+}
+
+        /* Progress Pics */
+.side a[href*='#pp'] { 
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    border: 2px #254C84;
+    font-size: 12.5;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: #254C84;
+}
+
+        /* Tutorial */
+.side a[href*='#tu'] { 
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    border: 2px #696969;
+    font-size: 12.5 white;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: #008080;
+}
+
+        /* Question */
+.side a[href*='#qu'] { 
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    border: 2px #E29E3F;
+    font-size: 12.5;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: #E29E3F;
+}
+
+        /* Untagged */
+.side a[href*='#un'] { 
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+    border: 2px #96155A;
+    font-size: 12.5;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: #96155A;
+}
+
+
+
+    /* Side-bar: Title Box */
+
+.titlebox blockquote {
+    border: 1px solid #70437a;
+    text-shadow: 0 1px 0 white;
+    color: #70437a;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.titlebox {
+    padding: 12px;
+    background: transparent;                   /* Sidebar Background color */
+    border: 1px solid #70437a !important;      /* Sidebar border color */
+    color: #3F4159;                            /* Text color in sidebar */
+  
+}
+
+
+        /* Title Color */
+.titlebox h1 a {
+    color: #3F4159;
+}
+
+
+    /* Side-bar: Subscription Area */
+
+           /* 'Readers' box */
+
+div.titlebox span.word {
+    display:none;
+}
+
+div.titlebox span.number:after {
+    content: " Aspiring Artists";
+}
+
+
+            /* 'Users' box */
+
+.users-online .word {
+    display:none;
+}
+
+.users-online .word, .users-online .number:after {
+    content: " artists here now" !important;
+}
+
+.titlebox .subscribers  {
+    position: relative;
+    left: 30px;
+}
+.titlebox .users-online {
+    position: relative;
+    left: 50px;
+}
+
+
+          /* Subscribe Button */
+
+body:not(.res) .titlebox .fancy-toggle-button {
+    display: block
+}
+
+.titlebox .subscribe-button {
+    text-align: center;
+    display: block
+}
+
+.titlebox .fancy-toggle-button {
+    margin-bottom: 8px;
+    margin-right: 0;
+    transition: all 100ms linear
+}
+
+.fancy-toggle-button .add {
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    background: #5B6;
+    color: #fff !important;
+    border: none;
+    padding:15px 15px;
+    line-height: 30px;
+    min-width: 50px;
+    transition: all 100ms linear
+}
+
+.fancy-toggle-button .add:hover,.RESshortcutside:hover,.RESDashboardToggle:hover {
+    background: #70437a !important;
+    transition: all 100ms linear
+}
+
+.fancy-toggle-button .remove {
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    color: #263238 !important;
+    border: none;
+    padding: 10px 15px;
+    line-height: 30px;
+    min-width: 50px;
+    transition: all 100ms linear
+}
+
+.fancy-toggle-button .remove:hover,.RESshortcutside.remove:hover,.RESDashboardToggle.remove:hover {
+    background: #F31! important;
+    color:#fff!important;
+    transition:all 100ms linear
+}
+
+.RESshortcutside,.RESshortcutside.remove,.RESDashboardToggle,.RESDashboardToggle.remove {
+    background: #fff!important;
+    color: #333 !important;
+    border: none !important;
+    position: relative;
+    left: 65px;
+    top: 0;
+    margin-bottom: 30px;
+    transition:all 100ms linear
+}
+
+.side a {
+    color: #2196F3
+}
+
+.voteWeight {
+    color: #369
+}
+
+.side .spacer .titlebox,.side .spacer .sidecontentbox {
+    background:#fff;
+    border:0px solid #ddd;
+    padding: 10px;
+    border-radius: 2px
+}
+
+.sidecontentbox .content {
+    border: medium none
+}
+
+.sidebox .spacer {
+    background: #f2f2f2
+}
+
+.titlebox h1 {
+    font-size: 16px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.side h2 {
+    background: #3F4159;
+    color: #fafafa;
+    font-size: 140%;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    padding:3px;
+    text-align:center
+}
+
+.md {
+    overflow:visible
+}
+
+.side .md > h1 {
+    background: #3F4159;
+    color: #fff;
+    margin: 10px -11px 5px;
+    padding:5px 0;
+}
+
+
+
+    /* Side-bar: Submit */
+
+.sidebox.submit .morelink {
+    border: 1px solid ;
+    background: #70437a;
+}
+
+.sidebox.submit .morelink a {
+    color: white;
+}
+
+.sidebox.submit .morelink:hover {
+    border: 1px solid #70437a;
+    background: white;
+}
+
+.sidebox.submit .morelink:hover a {
+    color: #70437a;
+}
+
+.nub { 
+    display: none;
+}
+
+
+
+    /* SUBMIT PAGE */
+
+.submit.content {
+    margin-top: 160px;
+}
+
+.submit_text {
+    position: absolute;
+    top: 230px;
+    max-height: none;
+}
